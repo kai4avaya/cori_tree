@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <title>Force-Directed Graph of Papers</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+
+
+    <style>
+        /* You might need this if using Tailwind CSS v2.x to ensure hover content visibility */
+        .group:hover .group-hover:block {
+          display: block;
+        }
+        #dateDisplay {
+            transition: background-color 1s;
+        }
+
+
+        .background-word {
+        position: absolute;
+        user-select: none;
+        pointer-events: none; /* Ensure clicks pass through */
+        z-index: -1; /* Place words behind other content */
+        color: royalblue; /* deep red */
+      }
+
+      #background-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place container behind other content */
+      }
+
+      #dateText{
+        color: black;
+      } 
+      .note {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-size: 12px;
+      color: black;
+    }
+
+      </style>
+
+      
+
+  </head>
+  
+
+
+  <body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
+    <div id="background-container"></div> <!-- Background container for words -->
+    <div class="absolute top-0 left-0 p-4 text-2xl text-white font-semibold" id="dateText"></div>
+        <div id="tree-container" class="overflow-hidden"></div>
+        <div class="note">[love you, Kai and Ren]</div>
+
+  </body>
+  <script>
+   
+  </script>
+
+  <script src="make_tree3.js"></script>
+  <script src="dateShifter.js"></script>
+  <script src="haiku.js"></script>
+
+
+
+  
+</html>
