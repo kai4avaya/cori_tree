@@ -55,14 +55,18 @@
       
 
   </head>
+
+  <!-- <div class="flex flex row"><div id="background-container"></div><div id="info" class="hover:text-red-500" onclick="alert('Dear Cori, \n\n My love. I am grateful for you. I love you and wish you a happy birthday. Your dreams come true. I love being a parent with you. \nLove, \n Kai')" >ⓘ</div></div>  -->
   
-
-
   <body class="bg-gray-100 flex flex-col justify-center items-center h-screen">
-    <div id="background-container"></div> <!-- Background container for words -->
+      <div id="background-container" style="flex-grow: 1;"></div>
+  
     <div class="absolute top-0 left-0 p-4 text-2xl text-white font-semibold" id="dateText"></div>
         <div id="tree-container" class="overflow-hidden"></div>
-        <div class="note">[love you, Kai and Ren]</div>
+        <div class="note">
+          [love you, Kai and Ren]
+          <span id="info" class="hover:text-red-500 cursor-pointer" onclick="alert(`Dear Cori, \n\nMy love. I am grateful for you. I love you and wish you a happy birthday. Your dreams come true.  You are powerful. Working hard everyday to discover. Our love together. I love being a parent with you.\n\nDear Cori, my love, I'm grateful for you.\nHappy birthday, may dreams find their cue.\nStrong and steadfast, in all that you do,\nTogether, we grow, our love always true.\nParenting with you, a journey we pursue.\n\nLove, \nKai\n-March 19, 2024`)">ⓘ</span>
+      </div>
 
   </body>
   <script>

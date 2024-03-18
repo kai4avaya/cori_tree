@@ -55,8 +55,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // canvas.width = window.innerWidth;
     // canvas.height = window.innerHeight;
       // Set up canvas with specific dimensions
-  const canvasWidth = 900; // Example width
-  const canvasHeight = 700; // Example height
+  const canvasWidth = 1200; // Example width
+  const canvasHeight = 1000; // Example height
   canvas.width = canvasWidth
   canvas.height =canvasHeight
   const ctx = canvas.getContext('2d');
@@ -80,7 +80,7 @@ container.appendChild(canvas);
    
       // Center the tree on the canvas
   const startX = canvas.width / 2;
-  const startY = canvas.height - 200;
+  const startY = canvas.height - 500;
   
     // Draw the tree
     tree(startX, startY, -Math.PI / 2, 0, random, config, ctx);
